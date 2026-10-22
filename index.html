@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Live Weather Dashboaed</title>
+  </head>
+  <body>
+    <div class="weather-container">
+      <h2>Weather Dashboard</h2>
+
+      <!-- Search Bar -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Write the name of the city (like Delhi, Hyderabad)..."
+        />
+        <button id="search-btn">Check Weather</button>
+      </div>
+
+      <!-- Weather Info Display Box -->
+      <div id="weather-display" class="weather-info hidden">
+        <h3 id="city-name">--</h3>
+        <div class="temp-box"><span id="temperature">--</span>°C</div>
+        <p id="description">--</p>
+
+        <div class="details-grid">
+          <div class="detail-item">
+            <span>Humidity</span>
+            <strong id="humidity">--%</strong>
+          </div>
+          <div class="detail-item">
+            <span>Wind Speed</span>
+            <strong id="wind-speed">--km/h</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
