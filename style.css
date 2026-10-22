@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.weather-container {
+  width: 100%;
+  max-width: 400px;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus {
+  background: #01283a;
+}
+
+button {
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* Weather Info Card Style */
+.weather-info {
+  text-align: center;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.city-name {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+.temp-box {
+  font-size: 48px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 5px;
+}
+
+#description {
+  text-transform: capitalize;
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Humidity & Wind Speed Grid */
+.details-grid {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.detail-item strong {
+  color: #f8fafc;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+/* Hidden class ( to hide data until it is searched) */
+.hidden {
+  display: none;
+}
