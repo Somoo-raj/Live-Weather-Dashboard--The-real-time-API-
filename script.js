@@ -8,7 +8,7 @@ const description = document.getElementById("description");
 const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("wind-speed");
 
-// Helper map to convert weather code into Hindi/English description.
+// Helper map to convert weather code into description.
 const weatherCodes = {
   0: "Clear sky ☀️",
   1: "Mainly clear 🌤️",
